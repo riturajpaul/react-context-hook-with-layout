@@ -14,7 +14,7 @@ function App() {
 				<Route exact path="/" >
 					<Redirect to="/home" />
 				</Route>
-				<MainLayout path="/home" component={HomeComponent} layout="MainLayout" />
+				<MainLayout path="/home" component={HomeComponent}  />
 				<Route path="*" component={NotFound} />			
 			</Switch>
 		</Router>

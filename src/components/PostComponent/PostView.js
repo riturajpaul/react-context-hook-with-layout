@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 import './PostStyle.scss';

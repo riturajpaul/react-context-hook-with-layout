@@ -3,15 +3,12 @@ import MyContext from './MyContext';
 
 class MyProvider extends Component {
 
-    state = {
-        name: 'user',
-        email: 'email',
-        phonenumber: 'phonenumber',
-        // data : []
-       
+    state = {        
+        data : []       
     };
-    updateValue = (key, val) => {     
-        this.setState(key,val);
+    updateValue = (details) => { 
+        this.state.data.push(details)       
+        this.setState(this.state);      
      }
     render() {
         return (
